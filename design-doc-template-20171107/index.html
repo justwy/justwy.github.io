@@ -1,0 +1,221 @@
+<html>
+<head>
+	
+	<title>design_doc_template</title>
+	<meta name="keywords" content="treq.me,justwy" />
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    
+	   <link href="/css/main.css?v=3" rel="stylesheet" type="text/css" />
+    
+        <script src="/js/util.js"></script>
+        <script>
+            if(isMobile()) {
+                loadjscssfile('../css/mobile.css', 'css');
+            } else {
+                loadjscssfile('../css/desktop.css', 'css');
+            }
+        </script> 
+    
+
+    <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom feed">
+
+    
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=3"/>
+    
+
+</head>
+
+<body>
+
+
+<h1 class="title">design_doc_template</h2>
+<!---
+<div style="text-align:center;margin-top: -10px;">
+<div class="article-category">
+发表于2017年11月7日
+
+
+
+
+ </div>
+--->
+</div>
+
+<!--
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Introduction"><span class="toc-text">Introduction</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Summary"><span class="toc-text">Summary</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Motivation"><span class="toc-text">Motivation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Requirements"><span class="toc-text">Requirements</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Definitions"><span class="toc-text">Definitions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Scope"><span class="toc-text">Scope</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Existing-systems"><span class="toc-text">Existing systems</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Design"><span class="toc-text">Design</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#High-level-Architecture"><span class="toc-text">High-level Architecture</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Data-Modelling-and-Data-Flow"><span class="toc-text">Data Modelling and Data Flow</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#User-Interface"><span class="toc-text">User Interface</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Availability"><span class="toc-text">Availability</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Performance"><span class="toc-text">Performance</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Scalability"><span class="toc-text">Scalability</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Internationalization"><span class="toc-text">Internationalization</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Security"><span class="toc-text">Security</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Costing"><span class="toc-text">Costing</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Operational"><span class="toc-text">Operational</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Risks-and-Project-Dependencies"><span class="toc-text">Risks and Project Dependencies</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#System-Dependencies"><span class="toc-text">System Dependencies</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Estimate"><span class="toc-text">Estimate</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Service-APIs"><span class="toc-text">Service APIs</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Deployment-and-Testing"><span class="toc-text">Deployment and Testing</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Deployment"><span class="toc-text">Deployment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Testing"><span class="toc-text">Testing</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Migration-Plan"><span class="toc-text">Migration Plan</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Milestones-Schedule"><span class="toc-text">Milestones / Schedule</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Open-Questions"><span class="toc-text">Open Questions</span></a></li></ol></li></ol>
+-->
+
+<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><ul>
+<li>Provide a single line summary of project</li>
+<li>Who is the intended audience of this document?</li>
+</ul>
+<h2 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h2><ul>
+<li>Provide the business background</li>
+<li>What is the expected business/customer impact? This might be increased revenue, selection expansion, ..</li>
+</ul>
+<h2 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h2><ul>
+<li>Clearly state the business requirements</li>
+<li>Clearly state the legal requirements, if any (data retention, data access, logging, SOX)</li>
+<li>Add a prediction for the growth rate for the system.</li>
+<li>Clearly state the technical requirements:<ul>
+<li>What are the requirements for scalability?</li>
+<li>What are the requirements for performance?</li>
+<li>What are the requirements for availability?</li>
+<li>What is the data classification and related InfoSec policy requirements<ul>
+<li>Determine the data classification and outline the data handling requirements given the classification (eg: encryption, access controls, etc). The following document links to the documents relevant for determination of the data classification and data handling requirements: <a href="https://policy.amazon.com/policy/95" target="_blank" rel="external">https://policy.amazon.com/policy/95</a></li>
+</ul>
+</li>
+<li>What are the requirements for internationalization?<ul>
+<li>Use UTF-8 by default.</li>
+<li>Consider timezone differences.</li>
+<li>Consider currency differences.</li>
+<li>Locale differences. For example not all locales use green to mean good and red to mean bad.</li>
+<li>Internationalization training in KNET: <a href="https://knet.csod.com/LMS/LoDetails/DetailsLo.aspx?loid=0cc563fb-b202-43a2-af80-50e43d9a1617#t=1" target="_blank" rel="external">https://knet.csod.com/LMS/LoDetails/DetailsLo.aspx?loid=0cc563fb-b202-43a2-af80-50e43d9a1617#t=1</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Definitions"><a href="#Definitions" class="headerlink" title="Definitions"></a>Definitions</h2><ul>
+<li>Any key concepts that need to be understood as prerequisites for reading the doc</li>
+<li>If you have a glossary then consider adding it as an appendix.</li>
+</ul>
+<h2 id="Scope"><a href="#Scope" class="headerlink" title="Scope"></a>Scope</h2><ul>
+<li>what is in and out of scope?</li>
+<li>what will always be out of scope?</li>
+<li>what are the likely follow up projects?</li>
+</ul>
+<h2 id="Existing-systems"><a href="#Existing-systems" class="headerlink" title="Existing systems"></a>Existing systems</h2><ul>
+<li>Is there an existing system or process that is to be replaced? If yes provide details.</li>
+</ul>
+<h1 id="Design"><a href="#Design" class="headerlink" title="Design"></a>Design</h1><p>Multiple competing designs can be presented. Present your recommendation after the design proposals and your reasoning for that choice.</p>
+<p>Consider presenting the following content for each of the designs:</p>
+<h2 id="High-level-Architecture"><a href="#High-level-Architecture" class="headerlink" title="High-level Architecture"></a>High-level Architecture</h2><ul>
+<li>Provide an architecture written description and diagram<ul>
+<li>From this, a reader should understand the most important runtime components of your system and how they relate.  <ul>
+<li>How do you coordinate your computation?   Services responding to requests?   Daemon processes listening to SQS queues or SWF?   DJS workflows?</li>
+<li>Do you persist data, and if so, where?   Authoritative datastore?   Do you export from to enable other kinds of data access, such as for reporting or search?</li>
+<li>What are the most important external systems you are integrating with?</li>
+</ul>
+</li>
+<li>Architecture diagrams often capture information that is similar to Deployment diagrams, but typically in a more free-form / easily visually interpreted way.</li>
+<li>For AWS components, in your architecture diagram, consider re-using the standard AWS icons</li>
+</ul>
+</li>
+<li>As necessary to communicate the plan, consider adding additional diagrams:<ul>
+<li>class diagrams or entity-relationship diagrams to show how business information has been captured in a domain model or data structure</li>
+<li>data flow diagrams or workflow-diagrams to show how different data enters your system, is transformed, joined, and passed downstream</li>
+<li>sequence diagrams to show interactions over time, especially when particular timing of events is essential to the design or scenario being considered</li>
+</ul>
+</li>
+</ul>
+<h2 id="Data-Modelling-and-Data-Flow"><a href="#Data-Modelling-and-Data-Flow" class="headerlink" title="Data Modelling and Data Flow"></a>Data Modelling and Data Flow</h2><ul>
+<li>Provide an E/R diagram if appropriate</li>
+<li>Provide a data flow diagram if appropriate</li>
+<li>Provide schema of data produced by the system. Data consumed by the system should comprise the requirements section.</li>
+</ul>
+<h2 id="User-Interface"><a href="#User-Interface" class="headerlink" title="User Interface"></a>User Interface</h2><ul>
+<li>provide mockups of key UI interfaces</li>
+</ul>
+<h2 id="Availability"><a href="#Availability" class="headerlink" title="Availability"></a>Availability</h2><ul>
+<li>How does this design achieve the above-mentioned goals for availability?</li>
+<li>What is the availability of the systems dependencies and how does that translate into this systems level of availability?</li>
+</ul>
+<h2 id="Performance"><a href="#Performance" class="headerlink" title="Performance"></a>Performance</h2><ul>
+<li>How does this design achieve the above-mentioned goals for performance?</li>
+<li>What are the likely performance bottlenecks and how might they be overcome? For instance you might describe system dependencies that affect performance or compute-heavy algorithms.</li>
+</ul>
+<h2 id="Scalability"><a href="#Scalability" class="headerlink" title="Scalability"></a>Scalability</h2><ul>
+<li>How does this design achieve the abovementioned goals for scalability?</li>
+<li>When you need to scale your service up how will this be achieved.</li>
+<li>What are the likely scaling bottlenecks and how might they be overcome? For instance there might be services or data stores on which you depend that limit scalability, …</li>
+</ul>
+<h2 id="Internationalization"><a href="#Internationalization" class="headerlink" title="Internationalization"></a>Internationalization</h2><ul>
+<li>How does this design achieve the abovementioned goals for internationalization?</li>
+</ul>
+<h2 id="Security"><a href="#Security" class="headerlink" title="Security"></a>Security</h2><ul>
+<li>Attach a TT link if you have gone through the security consultation process.</li>
+<li>Describe how the design is impacted by any data handling requirements.<ul>
+<li>Are all of the systems on which this system depends able to handle data of that particular classification?</li>
+</ul>
+</li>
+<li>Link to all of the relevant security policies.</li>
+<li>Describe the mechanism/s used for authentication. Eg: Kerberos, AAA, AWS Auth.</li>
+<li>Describe the mechanism/s for authorization. Eg: IAM policies.</li>
+<li>TODO (Anthony): Link to the tool that lets user do a self certification.</li>
+<li>Once you have created an Anvil application, please attach a link to it.</li>
+</ul>
+<h2 id="Costing"><a href="#Costing" class="headerlink" title="Costing"></a>Costing</h2><ul>
+<li>Estimate the current and predicted future cost of the system based on the expected throughput and rate of growth.</li>
+</ul>
+<h2 id="Operational"><a href="#Operational" class="headerlink" title="Operational"></a>Operational</h2><ul>
+<li>What monitors should be in place to identify error conditions?</li>
+<li>What alarms should be in place to aggregate monitors and notify on call of problems?</li>
+<li>What logging is required?</li>
+</ul>
+<h2 id="Risks-and-Project-Dependencies"><a href="#Risks-and-Project-Dependencies" class="headerlink" title="Risks and Project Dependencies"></a>Risks and Project Dependencies</h2><ul>
+<li>On what other projects does this project depend?</li>
+</ul>
+<h2 id="System-Dependencies"><a href="#System-Dependencies" class="headerlink" title="System Dependencies"></a>System Dependencies</h2><ul>
+<li>On what other systems and/or technologies does this system depend?</li>
+<li>How do the limitations of those systems or technolgoies affect this design?<ul>
+<li>For instance is the reliability reduced or increased as a result of taking on the system or technology dependency?</li>
+<li>How doess the dependency affect availability?</li>
+<li>How does the dependency affect throughput? (eg: KMS or other AWS service access rate limits, S3 hot keys, ..)</li>
+</ul>
+</li>
+</ul>
+<h2 id="Estimate"><a href="#Estimate" class="headerlink" title="Estimate"></a>Estimate</h2><ul>
+<li>Present a rough estimate of the level-of-effort required, if available.</li>
+</ul>
+<h2 id="Service-APIs"><a href="#Service-APIs" class="headerlink" title="Service APIs"></a>Service APIs</h2><ul>
+<li>Provide details of the API’s, if any.</li>
+</ul>
+<h1 id="Deployment-and-Testing"><a href="#Deployment-and-Testing" class="headerlink" title="Deployment and Testing"></a>Deployment and Testing</h1><h2 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h2><ul>
+<li>What is the rollout plan?</li>
+<li>What is the roll back plan?</li>
+</ul>
+<h2 id="Testing"><a href="#Testing" class="headerlink" title="Testing"></a>Testing</h2><ul>
+<li>What system tests should be in place?</li>
+<li>What stress testing will need to be done?</li>
+<li>What performance testing will need to be automated?</li>
+</ul>
+<h2 id="Migration-Plan"><a href="#Migration-Plan" class="headerlink" title="Migration Plan"></a>Migration Plan</h2><ul>
+<li>Are data migrations required?</li>
+<li>Are new schema versions required?</li>
+<li>How will this be managed?</li>
+</ul>
+<h2 id="Milestones-Schedule"><a href="#Milestones-Schedule" class="headerlink" title="Milestones / Schedule"></a>Milestones / Schedule</h2><h2 id="Open-Questions"><a href="#Open-Questions" class="headerlink" title="Open Questions"></a>Open Questions</h2><ul>
+<li>What are the open questions that need to be resolved?</li>
+</ul>
+
+
+<!--<a href="http://justwy.github.io/design-doc-template-20171107/#disqus_thread" class="article-comment-link">Comments</a>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'undefined'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+-->
+<div style="display:none">
+<script src="http://s4.cnzz.com/stat.php?id=undefined&web_id=undefined" language="JavaScript"></script>script>
+</div>
+
+
+
+
+
+
+</body>
+</html>
